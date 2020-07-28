@@ -1,0 +1,124 @@
+main {
+    width: 100%;
+    padding: 150px 20px 80px 20px;
+    background: #112d42;
+    -webkit-user-select: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .div {
+    width: 75%;
+    margin-right: 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+}
+
+main .div h2#h2-content {
+    padding: 30px 50px;
+    width: 100%;
+    background-color: #0098eb;
+    color: #fff;
+}
+
+main .div section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 0 15px 20px 15px;
+}
+
+main .div section h3 {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    color: #0088eb;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+main .div section table#tab-content {
+    margin-top: 10px;
+    width: 60%;
+}
+
+main .div section table#tab-content tr {
+    text-align: left;
+    margin: 5px 0;
+}
+
+main aside {
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-user-select: none;
+}
+
+main aside div {
+    margin: auto;
+    overflow: visible;
+    align-items: center;
+}
+
+main aside div h2 {
+    color: #0088eb;
+}
+
+main aside div p {
+    padding: 0;
+    width: 100%;
+}
+
+main aside div figure img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+main aside section {
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+main aside section h3 {
+    padding: 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    color: #0088eb;
+}
+
+table tr th,
+table tr td {
+    text-align: left;
+}
+
+table tr td {
+    padding: 0 0 0 10px;
+}
+
+@media (max-width: 992px) {
+    main .div {
+        width: 100%;
+    }
+    main aside {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main .div section table#tab-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {}

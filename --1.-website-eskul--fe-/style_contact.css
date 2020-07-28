@@ -1,0 +1,272 @@
+main {
+    display: flex;
+    padding: 100px 20px 60px 20px;
+    background: #112d42;
+    align-items: flex-start;
+}
+
+main section {
+    width: 75%;
+    display: flex;
+    margin-top: 1px;
+}
+
+main section .box {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+main section .box .box2 {
+    left: 0;
+    width: 40%;
+    margin: auto 0;
+    transform: translateX(13%);
+    z-index: 100;
+}
+
+main section .box .box2 .contact-info {
+    background-color: #0088eb;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+main section .box .box2 .contact-info h2 {
+    color: #fff;
+    padding: 0 0 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2.5px;
+}
+
+main section .box .box2 .contact-info ul li {
+    margin: 5px;
+}
+
+main section .box .box2 .contact-info ul li h4 {
+    letter-spacing: 1px;
+}
+
+main section a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main section a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+main section .box form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 40px 20px 150px;
+    transform: translateX(-13%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+}
+
+main section .box form h2 {
+    color: #0088eb;
+    padding-bottom: 10px;
+}
+
+main section .box form .inputBox {
+    width: 100%;
+}
+
+main section .box form .inputBox input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 15px 0;
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+main section .box form .mail-telp {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .box form .mail-telp .inputBox span#span-501 {
+    width: 100px;
+}
+
+main section .box form .mail-telp .inputBox {
+    width: 45%;
+}
+
+main section .box form .mail-telp .inputBox input[type='number']::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+main section .box form .inputBox span {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main section .box form .inputBox:nth-child(2) span {
+    width: 100px;
+}
+
+main section .box form .inputBox:nth-child(4) span {
+    width: 200px;
+}
+
+main section .box form .inputBox textarea {
+    width: 100%;
+    height: 90px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+    resize: none;
+    overflow-y: hidden;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+main section .box form input[type='submit'] {
+    margin: auto 30px 20px auto;
+    height: 35px;
+    width: 120px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #0088eb;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main section .box form input[type='submit']:focus {
+    background-color: #00f8eb;
+}
+
+main aside {
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-user-select: none;
+}
+
+main aside div {
+    margin: auto;
+}
+
+main aside div h2 {
+    color: #0088eb;
+}
+
+main aside div figure img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+main aside section {
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+main aside section h3 {
+    margin-bottom: 10px;
+    color: #0088eb;
+}
+
+table tr th,
+table tr td {
+    text-align: left;
+}
+
+table tr td {
+    padding: 0 0 0 10px;
+}
+
+@media (max-width: 992px) {
+    main section {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 100px;
+    }
+    main section .box {
+        margin: auto;
+    }
+    main aside {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 0 0px 0;
+        margin: 0;
+    }
+    main section {
+        padding: 70px 0 0 0;
+    }
+    main section .box {
+        flex-direction: column;
+    }
+    main section .box .box2 {
+        border-radius: 0;
+        order: 2;
+        margin: 0;
+        width: 100%;
+        transform: translateX(0);
+    }
+    main section .box .box2 .contact-info {
+        border-radius: 0;
+        background-color: #0098eb;
+        padding: 30px;
+    }
+    main section .box .box2 .contact-info h2 {
+        margin: auto;
+        padding: 0 0 10px 0;
+    }
+    main section .box form {
+        border-radius: 0;
+        order: 1;
+        margin: 0;
+        width: 100%;
+        padding: 50px;
+        transform: translateX(0);
+    }
+    main section .box form h2 {
+        padding-top: 20px;
+    }
+    main section .box form .mail-telp {
+        flex-direction: column;
+    }
+    main section .box form .mail-telp .inputBox {
+        width: 100%;
+    }
+    main section .box form input[type='submit'] {
+        margin: auto;
+        height: 40px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 580px) {
+    main section .box form {
+        padding: 30px;
+    }
+}

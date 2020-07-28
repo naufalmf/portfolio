@@ -1,0 +1,138 @@
+main {
+    width: 100%;
+    padding: 125px 20px 55px 20px;
+    background: #112d42;
+    display: flex;
+    align-items: flex-start;
+}
+
+main section {
+    width: 75%;
+    display: flex;
+    margin-right: 10px;
+}
+
+main section .aboutBox {
+    width: 100%;
+    margin: auto;
+}
+
+main section .aboutBox h2 {
+    width: 100%;
+    padding: 20px 60px;
+    color: #fff;
+    background: #0098eb;
+    border-radius: 10px 10px 0 0;
+}
+
+main section .aboutBox p {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+}
+
+main aside {
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-user-select: none;
+}
+
+main aside div {
+    margin: auto;
+}
+
+main aside div h2 {
+    color: #0088eb;
+}
+
+main aside div figure img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+main aside section {
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+main aside section h3 {
+    margin-bottom: 10px;
+    color: #0088eb;
+}
+
+table tr th,
+table tr td {
+    text-align: left;
+}
+
+table tr td {
+    padding: 0 0 0 10px;
+}
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+    main section {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 100px;
+    }
+    main section .box {
+        margin: auto;
+    }
+    main aside {
+        margin: auto;
+        width: 50%;
+        height: 450px;
+        box-shadow: none;
+    }
+    main aside div h2 {
+        padding: 30px 0 0 0;
+    }
+    main aside section h3 {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main aside {
+        width: 65%;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 0;
+    }
+    main section {
+        padding: 100px 0 30px 0;
+    }
+    main section .aboutBox h2 {
+        text-align: center;
+        padding: 25px 0;
+        border-radius: 0;
+    }
+    main section .aboutBox p {
+        border-radius: 0;
+    }
+    main aside {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    main aside section {
+        padding: 0 20px 20px 20px;
+    }
+}

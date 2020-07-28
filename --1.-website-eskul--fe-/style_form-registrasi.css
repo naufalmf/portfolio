@@ -1,0 +1,257 @@
+main {
+    width: 100%;
+    padding: 100px 20px 30px 20px;
+    display: flex;
+    background: #112d42;
+    align-items: flex-start;
+}
+
+main section {
+    width: 75%;
+    margin-right: 10px;
+}
+
+main section form {
+    width: 100%;
+    padding: 0px 0 60px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+}
+
+main section form h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding: 50px 20px 50px 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 2.2em;
+    cursor: default;
+    -webkit-user-select: none;
+    background-color: #00a8eb;
+}
+
+main section form .inputBox {
+    margin: 35px auto;
+    width: 250px;
+    height: 30px;
+}
+
+main section form .form-box {
+    display: flex;
+    margin: auto;
+}
+
+main section form .form-box .form-kiri,
+main section form .form-box .form-kanan {
+    margin: 0 50px;
+    position: relative;
+}
+
+main section form .form-box .form-kanan .inputBox:last-child {
+    width: 250px;
+    height: 100px;
+    display: flex;
+}
+
+main section form .inputBox input,
+main section form .inputBox select {
+    font-size: 16px;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+main section form .inputBox select {
+    cursor: pointer;
+}
+
+main section form .inputBox select.bor-bot {
+    border-bottom: 2px solid #0088eb;
+}
+
+main section form .inputBox select option:first-child {
+    display: none;
+}
+
+main section form .inputBox textarea {
+    font-size: 16px;
+    width: 250px;
+    height: 95px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+    resize: none;
+    overflow-y: hidden;
+}
+
+main section form .inputBox span {
+    width: 100%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate(-250px, 0);
+    pointer-events: none;
+    transition: 0.25s;
+    -webkit-user-select: none;
+    font-weight: 500;
+}
+
+main section form .inputBox span#spanJur.spanUp {
+    transform: translate(-250px, -20px);
+    color: #0088eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main section form .inputBox input:focus,
+main section form .inputBox textarea:focus,
+main section form .inputBox input:valid,
+main section form .inputBox textarea:valid {
+    border-bottom: 2px solid #0088eb;
+}
+
+main section form .inputBox input:focus~span,
+main section form .inputBox textarea:focus~span,
+main section form .inputBox input:valid~span,
+main section form .inputBox textarea:valid~span {
+    transform: translate(-250px, -20px);
+    color: #0088eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main section form .inputBox input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+main section form .inputBox input[type="submit"] {
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    margin: auto;
+    width: 140px;
+    height: 35px;
+    cursor: pointer;
+    background: #0088eb;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.25);
+    font-family: 'Quicksand', sans-serif;
+}
+
+main section form .inputBox input[type="submit"]:focus {
+    background: #00f8eb;
+    color: #111;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: unset 0 4px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+main aside {
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 1px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    padding: 0 20px;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-user-select: none;
+}
+
+main aside div {
+    margin: auto;
+}
+
+main aside div h2 {
+    color: #0088eb;
+}
+
+main aside div figure img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+main aside section {
+    margin: auto;
+    width: 100%;
+}
+
+main aside section h3 {
+    margin-bottom: 10px;
+    color: #0088eb;
+}
+
+table tr th,
+table tr td {
+    text-align: left;
+}
+
+table tr td {
+    padding: 0 0 0 10px;
+}
+
+@media (max-width: 992px) {
+    main section {
+        width: 100%;
+        margin: 0;
+    }
+    main section form {
+        box-shadow: none;
+    }
+    main aside {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 70px 0 0px 0;
+    }
+    main section form {
+        border-radius: 0;
+    }
+    main section form h2 {
+        font-size: 1.75em;
+    }
+    main section form .form-box {
+        flex-direction: column;
+    }
+    main section form .form-box .form-kiri,
+    main section form .form-box .form-kanan {
+        margin: 0;
+    }
+    main section form .form-box .form-kanan {
+        margin-top: -35px;
+    }
+    main section form .inputBox input[type="submit"] {
+        position: relative;
+        margin: auto;
+    }
+    main section form .form-kanan .inputBox:last-child {
+        transform: translateY(50px);
+    }
+}
+
+@media (max-width: 576px) {}
